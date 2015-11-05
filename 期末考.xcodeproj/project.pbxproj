@@ -7,25 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8584F73CAEE02BDA1655062A /* libPods-期末考.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 592207DE50C432981D1409AE /* libPods-期末考.a */; };
 		DEAF15A71BEB3694003BA48B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15A61BEB3694003BA48B /* main.m */; };
 		DEAF15AA1BEB3694003BA48B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15A91BEB3694003BA48B /* AppDelegate.m */; };
-		DEAF15AD1BEB3694003BA48B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15AC1BEB3694003BA48B /* ViewController.m */; };
 		DEAF15B01BEB3694003BA48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAF15AE1BEB3694003BA48B /* Main.storyboard */; };
 		DEAF15B21BEB3694003BA48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAF15B11BEB3694003BA48B /* Assets.xcassets */; };
 		DEAF15B51BEB3694003BA48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAF15B31BEB3694003BA48B /* LaunchScreen.storyboard */; };
+		DEAF15BD1BEB38D3003BA48B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAF15BC1BEB38D3003BA48B /* MapKit.framework */; };
+		DEAF15C11BEB3C0E003BA48B /* CoffeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15BF1BEB3C0E003BA48B /* CoffeeTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		DEAF15C21BEB3C0E003BA48B /* CoffeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAF15C01BEB3C0E003BA48B /* CoffeeTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DEAF15C51BEB3CF0003BA48B /* CoffeeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15C41BEB3CF0003BA48B /* CoffeeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DEAF15C81BEB49EF003BA48B /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15C71BEB49EF003BA48B /* AddViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DEAF15CB1BEB53C4003BA48B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15CA1BEB53C4003BA48B /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DEAF15CE1BEB5DC3003BA48B /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15CD1BEB5DC3003BA48B /* AddressViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DEAF15D11BEB60B7003BA48B /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15D01BEB60B7003BA48B /* MyAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		DEAF15D41BEB64C5003BA48B /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15D31BEB64C5003BA48B /* ImageViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7FF291F7A41C918271C92D /* Pods-期末考.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-期末考.release.xcconfig"; path = "Pods/Target Support Files/Pods-期末考/Pods-期末考.release.xcconfig"; sourceTree = "<group>"; };
+		592207DE50C432981D1409AE /* libPods-期末考.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-期末考.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE0824EAB0AB5E7504F31EC /* Pods-期末考.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-期末考.debug.xcconfig"; path = "Pods/Target Support Files/Pods-期末考/Pods-期末考.debug.xcconfig"; sourceTree = "<group>"; };
 		DEAF15A21BEB3694003BA48B /* 期末考.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "期末考.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAF15A61BEB3694003BA48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEAF15A81BEB3694003BA48B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEAF15A91BEB3694003BA48B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DEAF15AB1BEB3694003BA48B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DEAF15AC1BEB3694003BA48B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DEAF15AF1BEB3694003BA48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEAF15B11BEB3694003BA48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEAF15B41BEB3694003BA48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEAF15B61BEB3694003BA48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEAF15BC1BEB38D3003BA48B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DEAF15BE1BEB3C0E003BA48B /* CoffeeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeTableViewCell.h; sourceTree = "<group>"; };
+		DEAF15BF1BEB3C0E003BA48B /* CoffeeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeTableViewCell.m; sourceTree = "<group>"; };
+		DEAF15C01BEB3C0E003BA48B /* CoffeeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoffeeTableViewCell.xib; sourceTree = "<group>"; };
+		DEAF15C31BEB3CF0003BA48B /* CoffeeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeTableViewController.h; sourceTree = "<group>"; };
+		DEAF15C41BEB3CF0003BA48B /* CoffeeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeTableViewController.m; sourceTree = "<group>"; };
+		DEAF15C61BEB49EF003BA48B /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		DEAF15C71BEB49EF003BA48B /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		DEAF15C91BEB53C4003BA48B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DEAF15CA1BEB53C4003BA48B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DEAF15CC1BEB5DC3003BA48B /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		DEAF15CD1BEB5DC3003BA48B /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		DEAF15CF1BEB60B7003BA48B /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		DEAF15D01BEB60B7003BA48B /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		DEAF15D21BEB64C5003BA48B /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		DEAF15D31BEB64C5003BA48B /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		DEAF15D51BEB6C8F003BA48B /* 演算法.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "演算法.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +60,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAF15BD1BEB38D3003BA48B /* MapKit.framework in Frameworks */,
+				8584F73CAEE02BDA1655062A /* libPods-期末考.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABF7FBBB794A8DE232A65B77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCE0824EAB0AB5E7504F31EC /* Pods-期末考.debug.xcconfig */,
+				0D7FF291F7A41C918271C92D /* Pods-期末考.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DEAF15991BEB3693003BA48B = {
 			isa = PBXGroup;
 			children = (
+				DEAF15D51BEB6C8F003BA48B /* 演算法.playground */,
+				DEAF15BC1BEB38D3003BA48B /* MapKit.framework */,
 				DEAF15A41BEB3694003BA48B /* 期末考 */,
 				DEAF15A31BEB3694003BA48B /* Products */,
+				ABF7FBBB794A8DE232A65B77 /* Pods */,
+				E92527BF8A68628F66DB7F95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,13 +102,26 @@
 			children = (
 				DEAF15A81BEB3694003BA48B /* AppDelegate.h */,
 				DEAF15A91BEB3694003BA48B /* AppDelegate.m */,
-				DEAF15AB1BEB3694003BA48B /* ViewController.h */,
-				DEAF15AC1BEB3694003BA48B /* ViewController.m */,
 				DEAF15AE1BEB3694003BA48B /* Main.storyboard */,
 				DEAF15B11BEB3694003BA48B /* Assets.xcassets */,
 				DEAF15B31BEB3694003BA48B /* LaunchScreen.storyboard */,
 				DEAF15B61BEB3694003BA48B /* Info.plist */,
 				DEAF15A51BEB3694003BA48B /* Supporting Files */,
+				DEAF15BE1BEB3C0E003BA48B /* CoffeeTableViewCell.h */,
+				DEAF15BF1BEB3C0E003BA48B /* CoffeeTableViewCell.m */,
+				DEAF15C01BEB3C0E003BA48B /* CoffeeTableViewCell.xib */,
+				DEAF15C31BEB3CF0003BA48B /* CoffeeTableViewController.h */,
+				DEAF15C41BEB3CF0003BA48B /* CoffeeTableViewController.m */,
+				DEAF15C61BEB49EF003BA48B /* AddViewController.h */,
+				DEAF15C71BEB49EF003BA48B /* AddViewController.m */,
+				DEAF15C91BEB53C4003BA48B /* DetailViewController.h */,
+				DEAF15CA1BEB53C4003BA48B /* DetailViewController.m */,
+				DEAF15CC1BEB5DC3003BA48B /* AddressViewController.h */,
+				DEAF15CD1BEB5DC3003BA48B /* AddressViewController.m */,
+				DEAF15CF1BEB60B7003BA48B /* MyAnnotation.h */,
+				DEAF15D01BEB60B7003BA48B /* MyAnnotation.m */,
+				DEAF15D21BEB64C5003BA48B /* ImageViewController.h */,
+				DEAF15D31BEB64C5003BA48B /* ImageViewController.m */,
 			);
 			path = "期末考";
 			sourceTree = "<group>";
@@ -79,6 +134,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E92527BF8A68628F66DB7F95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				592207DE50C432981D1409AE /* libPods-期末考.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEAF15B91BEB3694003BA48B /* Build configuration list for PBXNativeTarget "期末考" */;
 			buildPhases = (
+				AC05F2A0611422910E31D2CE /* Check Pods Manifest.lock */,
 				DEAF159E1BEB3694003BA48B /* Sources */,
 				DEAF159F1BEB3694003BA48B /* Frameworks */,
 				DEAF15A01BEB3694003BA48B /* Resources */,
+				45A0E40081977ADED31CDAD5 /* Embed Pods Frameworks */,
+				EA39C05C4126989633C644BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,19 +205,74 @@
 				DEAF15B51BEB3694003BA48B /* LaunchScreen.storyboard in Resources */,
 				DEAF15B21BEB3694003BA48B /* Assets.xcassets in Resources */,
 				DEAF15B01BEB3694003BA48B /* Main.storyboard in Resources */,
+				DEAF15C21BEB3C0E003BA48B /* CoffeeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45A0E40081977ADED31CDAD5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-期末考/Pods-期末考-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC05F2A0611422910E31D2CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA39C05C4126989633C644BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-期末考/Pods-期末考-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEAF159E1BEB3694003BA48B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEAF15AD1BEB3694003BA48B /* ViewController.m in Sources */,
+				DEAF15C81BEB49EF003BA48B /* AddViewController.m in Sources */,
+				DEAF15CE1BEB5DC3003BA48B /* AddressViewController.m in Sources */,
+				DEAF15D11BEB60B7003BA48B /* MyAnnotation.m in Sources */,
 				DEAF15AA1BEB3694003BA48B /* AppDelegate.m in Sources */,
+				DEAF15C51BEB3CF0003BA48B /* CoffeeTableViewController.m in Sources */,
 				DEAF15A71BEB3694003BA48B /* main.m in Sources */,
+				DEAF15D41BEB64C5003BA48B /* ImageViewController.m in Sources */,
+				DEAF15C11BEB3C0E003BA48B /* CoffeeTableViewCell.m in Sources */,
+				DEAF15CB1BEB53C4003BA48B /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +380,7 @@
 		};
 		DEAF15BA1BEB3694003BA48B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE0824EAB0AB5E7504F31EC /* Pods-期末考.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "期末考/Info.plist";
@@ -270,6 +392,7 @@
 		};
 		DEAF15BB1BEB3694003BA48B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7FF291F7A41C918271C92D /* Pods-期末考.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "期末考/Info.plist";
@@ -298,6 +421,7 @@
 				DEAF15BB1BEB3694003BA48B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
