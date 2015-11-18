@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8584F73CAEE02BDA1655062A /* libPods-期末考.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 592207DE50C432981D1409AE /* libPods-期末考.a */; };
+		DE8842021BF9B33D00936610 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE8842001BF9B33C00936610 /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		DE8842071BF9B41200936610 /* CoffeeShop+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8842041BF9B41200936610 /* CoffeeShop+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		DE8842081BF9B41200936610 /* CoffeeShop.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8842061BF9B41200936610 /* CoffeeShop.m */; settings = {ASSET_TAGS = (); }; };
 		DEAF15A71BEB3694003BA48B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15A61BEB3694003BA48B /* main.m */; };
 		DEAF15AA1BEB3694003BA48B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF15A91BEB3694003BA48B /* AppDelegate.m */; };
 		DEAF15B01BEB3694003BA48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAF15AE1BEB3694003BA48B /* Main.storyboard */; };
@@ -28,6 +31,11 @@
 		0D7FF291F7A41C918271C92D /* Pods-期末考.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-期末考.release.xcconfig"; path = "Pods/Target Support Files/Pods-期末考/Pods-期末考.release.xcconfig"; sourceTree = "<group>"; };
 		592207DE50C432981D1409AE /* libPods-期末考.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-期末考.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE0824EAB0AB5E7504F31EC /* Pods-期末考.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-期末考.debug.xcconfig"; path = "Pods/Target Support Files/Pods-期末考/Pods-期末考.debug.xcconfig"; sourceTree = "<group>"; };
+		DE8842011BF9B33D00936610 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DE8842031BF9B41200936610 /* CoffeeShop+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoffeeShop+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DE8842041BF9B41200936610 /* CoffeeShop+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoffeeShop+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DE8842051BF9B41200936610 /* CoffeeShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeShop.h; sourceTree = "<group>"; };
+		DE8842061BF9B41200936610 /* CoffeeShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeShop.m; sourceTree = "<group>"; };
 		DEAF15A21BEB3694003BA48B /* 期末考.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "期末考.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAF15A61BEB3694003BA48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEAF15A81BEB3694003BA48B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 		DEAF15A41BEB3694003BA48B /* 期末考 */ = {
 			isa = PBXGroup;
 			children = (
+				DE8842001BF9B33C00936610 /* Model.xcdatamodeld */,
 				DEAF15A81BEB3694003BA48B /* AppDelegate.h */,
 				DEAF15A91BEB3694003BA48B /* AppDelegate.m */,
 				DEAF15AE1BEB3694003BA48B /* Main.storyboard */,
@@ -122,6 +131,10 @@
 				DEAF15D01BEB60B7003BA48B /* MyAnnotation.m */,
 				DEAF15D21BEB64C5003BA48B /* ImageViewController.h */,
 				DEAF15D31BEB64C5003BA48B /* ImageViewController.m */,
+				DE8842031BF9B41200936610 /* CoffeeShop+CoreDataProperties.h */,
+				DE8842041BF9B41200936610 /* CoffeeShop+CoreDataProperties.m */,
+				DE8842051BF9B41200936610 /* CoffeeShop.h */,
+				DE8842061BF9B41200936610 /* CoffeeShop.m */,
 			);
 			path = "期末考";
 			sourceTree = "<group>";
@@ -265,12 +278,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAF15C81BEB49EF003BA48B /* AddViewController.m in Sources */,
+				DE8842081BF9B41200936610 /* CoffeeShop.m in Sources */,
 				DEAF15CE1BEB5DC3003BA48B /* AddressViewController.m in Sources */,
 				DEAF15D11BEB60B7003BA48B /* MyAnnotation.m in Sources */,
 				DEAF15AA1BEB3694003BA48B /* AppDelegate.m in Sources */,
 				DEAF15C51BEB3CF0003BA48B /* CoffeeTableViewController.m in Sources */,
 				DEAF15A71BEB3694003BA48B /* main.m in Sources */,
 				DEAF15D41BEB64C5003BA48B /* ImageViewController.m in Sources */,
+				DE8842071BF9B41200936610 /* CoffeeShop+CoreDataProperties.m in Sources */,
+				DE8842021BF9B33D00936610 /* Model.xcdatamodeld in Sources */,
 				DEAF15C11BEB3C0E003BA48B /* CoffeeTableViewCell.m in Sources */,
 				DEAF15CB1BEB53C4003BA48B /* DetailViewController.m in Sources */,
 			);
@@ -424,6 +440,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE8842001BF9B33C00936610 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE8842011BF9B33D00936610 /* Model.xcdatamodel */,
+			);
+			currentVersion = DE8842011BF9B33D00936610 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DEAF159A1BEB3693003BA48B /* Project object */;
 }

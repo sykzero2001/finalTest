@@ -8,6 +8,8 @@
 
 #import "AddViewController.h"
 #import <Parse/Parse.h>
+#import "AppDelegate.h"
+#import "CoffeeShop.h"
 
 @interface AddViewController ()<UITextFieldDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *photoImage;
@@ -56,6 +58,18 @@
     NSData *imageData = UIImagePNGRepresentation(self.photoImage.image);
     PFFile *imageFile;
     NSDictionary *dic;
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"CoffeeShop" inManagedObjectContext:delegate.managedObjectContext];
+    CoffeeShop *record = [[CoffeeShop alloc] initWithEntity:entity insertIntoManagedObjectContext:delegate.managedObjectContext];
+    record.name = self.nameText.text;
+    record.address = self.addressText.text;
+    NSNumber *tmp = [NSNumber numberWithInt:self.phoneText.text.intValue];
+    record.phone = tmp;
+    record.weburl = self.webText.text;
+    record.detail = self.detailText.text;
+    record.photo = imageData;
+    NSError *error = nil;
+    [delegate.managedObjectContext save:&error];
     if (imageData!=nil) {
         imageFile = [PFFile fileWithName:@"image" data:imageData];
         dic =

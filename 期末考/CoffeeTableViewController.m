@@ -11,6 +11,8 @@
 #import <Parse/Parse.h>
 #import "DetailViewController.h"
 #import <SystemConfiguration/SystemConfiguration.h>
+#import "AppDelegate.h"
+#import "CoffeeShop.h"
 
 @interface CoffeeTableViewController ()
 {
@@ -48,19 +50,20 @@
         [self presentViewController:alertController animated:YES completion:nil];
     }
 else {
-    PFQuery *query = [PFQuery queryWithClassName:@"CoffeeShop"];
-    [query orderByDescending:@"createdAt"];
-    
-    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable
-                                              objects, NSError * _Nullable error) {
-        coffeeShopArray = [objects mutableCopy];
-        self.refreshControl = [[UIRefreshControl alloc] init];
-        [self.refreshControl addTarget:self action:@selector(refresh)
-                      forControlEvents:UIControlEventValueChanged];
-        [self.tableView addSubview:self.refreshControl];
-
-        [self.tableView reloadData];
-    }];
+    [self getData];
+//    PFQuery *query = [PFQuery queryWithClassName:@"CoffeeShop"];
+//    [query orderByDescending:@"createdAt"];
+//    
+//    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable
+//                                              objects, NSError * _Nullable error) {
+//        coffeeShopArray = [objects mutableCopy];
+//        self.refreshControl = [[UIRefreshControl alloc] init];
+//        [self.refreshControl addTarget:self action:@selector(refresh)
+//                      forControlEvents:UIControlEventValueChanged];
+//        [self.tableView addSubview:self.refreshControl];
+//
+//        [self.tableView reloadData];
+//    }];
  }
     
 
@@ -94,17 +97,18 @@ else {
         cell.coffeeName.text = dic[@"name"];
         cell.coffeeAddress.text = dic[@"address"];
         cell.coffeeImage.image = nil;
-        PFFile *photo = dic[@"photo"];
-        NSNull *wrong = [NSNull null];
-        if (photo != wrong) {
-            [photo getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError *
-                                                  _Nullable error) {
-                if(error == nil) {
-                    UIImage *image = [[UIImage alloc] initWithData:data];
-                    cell.coffeeImage.image = image;
-                }
-            }];
-        }
+        NSData *photo = dic[@"photo"];
+        cell.coffeeImage.image = [[UIImage alloc] initWithData:photo];
+//        NSNull *wrong = [NSNull null];
+//        if (photo != wrong) {
+//            [photo getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError *
+//                                                  _Nullable error) {
+//                if(error == nil) {
+//                    UIImage *image = [[UIImage alloc] initWithData:data];
+//                    cell.coffeeImage.image = image;
+//                }
+//            }];
+//        }
     }
 
     
@@ -144,9 +148,10 @@ else {
 }
 
 -(void)refresh{
-        PFQuery *query = [PFQuery queryWithClassName:@"CoffeeShop"];
-        [query orderByDescending:@"createdAt"];
-        coffeeShopArray = [[query findObjects] mutableCopy];
+//        PFQuery *query = [PFQuery queryWithClassName:@"CoffeeShop"];
+//        [query orderByDescending:@"createdAt"];
+//        coffeeShopArray = [[query findObjects] mutableCopy];
+        [self getData];
         [self.tableView reloadData];
         [self.refreshControl endRefreshing];
 }
@@ -167,6 +172,23 @@ else {
     }
     
     
+}
+-(void)getData
+{
+    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"CoffeeShop" inManagedObjectContext:delegate.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error = nil;
+    NSArray *array = [delegate.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    NSMutableArray *tmpArray  = [@[] mutableCopy];
+    for(CoffeeShop *coffeeShop in array){
+        NSDictionary *coffee = @{@"name":coffeeShop.name,@"address":coffeeShop.address,@"phone":coffeeShop.phone,@"webUrl":coffeeShop.weburl,@"detail":coffeeShop.detail,@"photo":coffeeShop.photo};
+        [tmpArray insertObject:coffee atIndex:0];
+//        NSLog(@"songci %@", songCi.name);
+    };
+    coffeeShopArray = tmpArray;
 }
 
 @end
