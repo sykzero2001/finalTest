@@ -57,12 +57,12 @@ else {
 //    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable
 //                                              objects, NSError * _Nullable error) {
 //        coffeeShopArray = [objects mutableCopy];
-//        self.refreshControl = [[UIRefreshControl alloc] init];
-//        [self.refreshControl addTarget:self action:@selector(refresh)
-//                      forControlEvents:UIControlEventValueChanged];
-//        [self.tableView addSubview:self.refreshControl];
-//
-//        [self.tableView reloadData];
+        self.refreshControl = [[UIRefreshControl alloc] init];
+        [self.refreshControl addTarget:self action:@selector(refresh)
+                      forControlEvents:UIControlEventValueChanged];
+        [self.tableView addSubview:self.refreshControl];
+
+        [self.tableView reloadData];
 //    }];
  }
     
@@ -99,6 +99,9 @@ else {
         cell.coffeeImage.image = nil;
         NSData *photo = dic[@"photo"];
         cell.coffeeImage.image = [[UIImage alloc] initWithData:photo];
+//        UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+//        UIGraphicsEndImageContext();
+
 //        NSNull *wrong = [NSNull null];
 //        if (photo != wrong) {
 //            [photo getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError *
@@ -130,21 +133,22 @@ else {
 
 -(void)addCoffeeNoti:(NSNotification*)noti {
     //    NSDictionary *movieDic = noti.userInfo;
-    NSMutableDictionary * coffeeDic = [noti.userInfo mutableCopy];
-    PFObject *coffee = [PFObject objectWithClassName:@"CoffeeShop"];
-    coffee[@"name"] = coffeeDic[@"name"];
-    coffee[@"address"] = coffeeDic[@"address"];
-    coffee[@"phone"] = coffeeDic[@"phone"];
-    coffee[@"webUrl"] = coffeeDic[@"webUrl"];
-    coffee[@"detail"] = coffeeDic[@"detail"];
-    coffee[@"photo"] = coffeeDic[@"photo"];
-    [coffee saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        if (succeeded) {
-            [coffeeShopArray insertObject:coffee atIndex:0];
-            NSLog(@"存檔成功！");
-            [self.tableView reloadData];
-        }
-    }];
+//    NSMutableDictionary * coffeeDic = [noti.userInfo mutableCopy];
+//    PFObject *coffee = [PFObject objectWithClassName:@"CoffeeShop"];
+//    coffee[@"name"] = coffeeDic[@"name"];
+//    coffee[@"address"] = coffeeDic[@"address"];
+//    coffee[@"phone"] = coffeeDic[@"phone"];
+//    coffee[@"webUrl"] = coffeeDic[@"webUrl"];
+//    coffee[@"detail"] = coffeeDic[@"detail"];
+//    coffee[@"photo"] = coffeeDic[@"photo"];
+//    [coffee saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+//        if (succeeded) {
+//            [coffeeShopArray insertObject:coffee atIndex:0];
+//            NSLog(@"存檔成功！");
+//            [self.tableView reloadData];
+//        }
+//    }];
+    [self.tableView reloadData];
 }
 
 -(void)refresh{

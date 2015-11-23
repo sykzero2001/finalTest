@@ -33,20 +33,25 @@
     if (self.coffeeDic != nil) {
         self.name.text = _coffeeDic[@"name"];
         self.address.text = _coffeeDic[@"address"];
-        self.phone.text = _coffeeDic[@"phone"];
+//        NSNumber *tmp =_coffeeDic[@"phone"];
+        NSString *phoneString = [NSString stringWithFormat:@"%@" ,_coffeeDic[@"phone"]];
+        self.phone.text = phoneString;
         self.webUrl.text = _coffeeDic[@"webUrl"];
         self.detail.text = _coffeeDic[@"detail"];
-        PFFile *photoImage = _coffeeDic[@"photo"];
-        NSNull *wrong = [NSNull null];
-        if (photoImage != wrong) {
-            [photoImage getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError *
-                                                  _Nullable error) {
-                if(error == nil) {
-                    self.photoPara  = [[UIImage alloc] initWithData:data];
-                    self.photo.image = self.photoPara;
-                }
-            }];
-    }
+        NSData *photoImage = _coffeeDic[@"photo"];
+        self.photo.image = [[UIImage alloc] initWithData:photoImage];
+        self.photoPara = self.photo.image;
+//        PFFile *photoImage = _coffeeDic[@"photo"];
+//        NSNull *wrong = [NSNull null];
+//        if (photoImage != wrong) {
+//            [photoImage getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError *
+//                                                  _Nullable error) {
+//                if(error == nil) {
+//                    self.photoPara  = [[UIImage alloc] initWithData:data];
+//                    self.photo.image = self.photoPara;
+//                }
+//            }];
+//    }
     }
 }
 
